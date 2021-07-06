@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc1556d5-8b82-43d7-b0a0-ff95c88db735" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rewrite/fhxz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/fhxz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rewrite/fhxz.js" beforeDir="false" afterPath="$PROJECT_DIR$/rewrite/fhxz.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/fhxz.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="748" column="20" lean-forward="true" selection-end-line="788" />
+            <state relative-caret-position="354">
+              <caret line="145" column="34" lean-forward="true" selection-start-line="145" selection-start-column="34" selection-end-line="145" selection-end-column="64" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -38,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rewrite/fhxz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="270">
+              <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -66,8 +64,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="302" />
-    <option name="y" value="107" />
+    <option name="x" value="102" />
+    <option name="y" value="134" />
     <option name="width" value="1793" />
     <option name="height" value="1108" />
   </component>
@@ -87,6 +85,11 @@
               <item name="task" type="b2602c69:ProjectViewProjectNode" />
               <item name="task" type="462c0819:PsiDirectoryNode" />
               <item name="rewrite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -123,15 +126,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1625575026742</updated>
-      <workItem from="1625575027995" duration="1508000" />
+      <workItem from="1625575027995" duration="1736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1508000" />
+    <option name="totallyTimeSpent" value="1736000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="302" y="107" width="1793" height="1108" extended-state="0" />
+    <frame x="102" y="134" width="1793" height="1108" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -171,8 +174,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fhxz.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="748" column="20" lean-forward="true" selection-end-line="788" />
+        <state relative-caret-position="354">
+          <caret line="145" column="34" lean-forward="true" selection-start-line="145" selection-start-column="34" selection-end-line="145" selection-end-column="64" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -181,8 +184,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rewrite/fhxz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="270">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
         </state>
       </provider>
     </entry>

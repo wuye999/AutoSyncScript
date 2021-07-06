@@ -1,3 +1,8 @@
+
+//【rewrite local】
+// # 富豪小镇
+// ^https://sunnytown.hyskgame.com/api/messages?accessToken=?.* url script-request-header https://ghproxy.com/http://raw.githubusercontent.com/okboy688/task/main/rewrite/fhxz.js
+
 const jsname='🏠富豪小镇';
 const $ = Env(jsname);
 

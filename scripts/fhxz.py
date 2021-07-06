@@ -731,7 +731,7 @@ class Fhxz:
 
 
 if __name__ == '__main__':
-    target_times = random.randint(15, 30)
+    target_times = random.randint(15, 20)
 
 
     def parse(account):

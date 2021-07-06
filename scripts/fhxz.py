@@ -771,7 +771,7 @@ if __name__ == '__main__':
 
                 fhxz.exit()
                 print('-----------------------------\n\n')
-                if not (8 <= datetime.datetime.now().hour < 25):
+                if not (8 <= datetime.datetime.now().hour < 22):
                     break
 
                 all_finish = False

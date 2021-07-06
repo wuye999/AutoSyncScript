@@ -1,14 +1,10 @@
 
-//【rewrite local】
-// # 富豪小镇
-// ^https://sunnytown.hyskgame.com/api/messages?accessToken=?.* url script-request-header https://ghproxy.com/http://raw.githubusercontent.com/okboy688/task/main/rewrite/fhxz.js
-
 const jsname='🏠富豪小镇';
 const $ = Env(jsname);
 
 
 //login
-if ($request && $request.indexOf('accessToken') > -1) {
+if ($request && $request.url.indexOf('accessToken') > -1) {
   $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
   $.msg($.name, "获取账号信息成功🎉");
   $.done()

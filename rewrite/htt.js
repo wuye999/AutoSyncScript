@@ -20,15 +20,14 @@ if ($request && $request.url.indexOf('/frontend/newbie/task/list') > -1) {
     $.done()
 }
 
-// if ($request && $request.url.indexOf('/frontend/read/sych/duration') > -1) {
-//     $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
-//     $.log(`获取账号信息🎉: 成功\nparams: ${$request.query}`);
-//     $.log(`获取账号信息🎉: 成功\ncookies: ${$request.cookies}`);
-//     $.log(`获取账号信息🎉: 成功\nbody: ${$request.body}`);
-//     $.log(`获取账号信息🎉: 成功\nheaders: ${$request.headers}`);
-//     $.msg($.name, "获取账号信息成功🎉");
-//     $.done()
-// }
+if ($request && $request.url.indexOf('/frontend/read/sych/duration') > -1) {
+    $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
+    $.log(`获取账号信息🎉: 成功\nloginId: ${getQueryVariable($request.url, 'loginId')}`);
+    $.log(`获取账号信息🎉: 成功\ncookies: ${$request.headers.cookies}`);
+    $.log(`获取账号信息🎉: 成功\nuser-agent: ${$request.headers['User-Agent']}`);
+    $.msg($.name, "获取账号信息成功🎉");
+    $.done()
+}
 
 $.done();
 

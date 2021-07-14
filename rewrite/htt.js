@@ -4,20 +4,20 @@ const $ = Env(jsname);
 
 if ($request && $request.url.indexOf('/frontend/newbie/task/list') > -1) {
   $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
-  $.log(`获取账号信息🎉: 成功\nurl: ${$request.params}`);
-  $.log(`获取账号信息🎉: 成功\nurl: ${$request.cookies}`);
-  $.log(`获取账号信息🎉: 成功\nurl: ${$request.request.body}`);
-    $.log(`获取账号信息🎉: 成功\nurl: ${$request.headers}`);
+  $.log(`获取账号信息🎉: 成功\nparams: ${$request.query}`);
+  $.log(`获取账号信息🎉: 成功\ncookies: ${$request.cookies}`);
+  $.log(`获取账号信息🎉: 成功\nbody: ${$request.body}`);
+    $.log(`获取账号信息🎉: 成功\nheaders: ${$request.headers}`);
   $.msg($.name, "获取账号信息成功🎉");
   $.done()
 }
 
 if ($request && $request.url.indexOf('/frontend/read/sych/duration') > -1) {
   $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
-  $.log(`获取账号信息🎉: 成功\nurl: ${$request.params}`);
-  $.log(`获取账号信息🎉: 成功\nurl: ${$request.cookies}`);
-  $.log(`获取账号信息🎉: 成功\nurl: ${$request.request.body}`);
-    $.log(`获取账号信息🎉: 成功\nurl: ${$request.headers}`);
+  $.log(`获取账号信息🎉: 成功\nparams: ${$request.query}`);
+  $.log(`获取账号信息🎉: 成功\ncookies: ${$request.cookies}`);
+  $.log(`获取账号信息🎉: 成功\nbody: ${$request.body}`);
+    $.log(`获取账号信息🎉: 成功\nheaders: ${$request.headers}`);
   $.msg($.name, "获取账号信息成功🎉");
   $.done()
 }

@@ -2,13 +2,14 @@ const jsname = '惠头条';
 const $ = Env(jsname);
 
 function  getQueryVariable(url, name) {
-      const reg = new RegExp("(^|&)" + name+ "=([^&]*)(&|$)", "i");
-      const result = url.search.substr(1).match(reg);
-      if ( result != null ){
-         return decodeURI(result[2]);
-     }else{
-         return null;
-     }
+    const params = url.split('?', 2)[1];
+    const param_splited = params.split('&');
+    for (let i = 0; i < param_splited.length; i++) {
+        const param = param_splited[i];
+        if (param[0] === name) {
+            return param[1]
+        }
+    }
 }
 
 if ($request && $request.url.indexOf('/frontend/newbie/task/list') > -1) {

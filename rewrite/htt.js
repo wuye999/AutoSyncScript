@@ -20,7 +20,8 @@ function  getQueryVariable(url, name) {
 if ($request && $request.url.indexOf('/frontend/newbie/task/list') > -1) {
     $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
     const url = $request.url;
-    const config = `export HTT_AUTH='login_id=${getQueryVariable(url, 'loginId')};user_id=${getQueryVariable(url, 'userId')};sensorsdata=${getQueryVariable($request.headers.Cookie, 'sensorsdata2015jssdkcross')};registerTime=${$request.body.registerTime}'`
+    const body = JSON.parse($request.body);
+    const config = `export HTT_AUTH='login_id=${getQueryVariable(url, 'loginId')};user_id=${getQueryVariable(url, 'userId')};sensorsdata=${getQueryVariable($request.headers.Cookie, 'sensorsdata2015jssdkcross')};registerTime=${body.registerTime}'`;
     $.log(config);
     $.log(`export HTT_UA='${$request.headers['User-Agent']}'`);
     Object.keys($request).forEach((key) => {
@@ -33,7 +34,8 @@ if ($request && $request.url.indexOf('/frontend/newbie/task/list') > -1) {
 if ($request && $request.url.indexOf('/frontend/read/sych/duration') > -1) {
     $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
     const url = $request.url;
-    const config = `export HTT_AUTH='read_token=${$request.body.token};'`;
+    const body = JSON.parse($request.body);
+    const config = `export HTT_AUTH='read_token=${body.token};'`;
     $.log(config);
     $.log(`export HTT_UA='${$request.headers['User-Agent']}'`);
     Object.keys($request).forEach((key) => {

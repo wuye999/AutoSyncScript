@@ -6,11 +6,14 @@ function  getQueryVariable(url, name) {
     const param_splited = params.split('&');
     for (let i = 0; i < param_splited.length; i++) {
         const param = param_splited[i];
-        if (param[0] === name) {
-            return param[1]
+        console.info(param)
+        if (param.split('=')[0] === name) {
+            return param.split('=')[1]
         }
     }
 }
+const url = 'https://api.cashtoutiao.com/frontend/read/sych/duration?userId=153137064&loginId=c9542691e5094dcbb20a920710103136&appVersion=1042&platform=1&versionName=4.5.0';
+console.info(getQueryVariable(url, 'loginId'));
 
 if ($request && $request.url.indexOf('/frontend/newbie/task/list') > -1) {
     $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
@@ -23,9 +26,14 @@ if ($request && $request.url.indexOf('/frontend/newbie/task/list') > -1) {
 
 if ($request && $request.url.indexOf('/frontend/read/sych/duration') > -1) {
     $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
+    const url = $request.url;
+    const config = `login_id=${getQueryVariable(url, 'loginId')};user_id=${getQueryVariable(url, 'userId')}`
     $.log(`获取账号信息🎉: 成功\nloginId: ${getQueryVariable($request.url, 'loginId')}`);
     $.log(`获取账号信息🎉: 成功\ncookies: ${$request.headers.cookies}`);
     $.log(`获取账号信息🎉: 成功\nuser-agent: ${$request.headers['User-Agent']}`);
+    Object.keys($request.headers).forEach((key) => {
+        console.info(`key:${key}, value:${$request.headers[key]}`)
+    });
     $.msg($.name, "获取账号信息成功🎉");
     $.done()
 }

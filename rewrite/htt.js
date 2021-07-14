@@ -2,7 +2,12 @@ const jsname = '惠头条';
 const $ = Env(jsname);
 
 function  getQueryVariable(url, name) {
-    const params = url.split('?', 2)[1];
+    let params = '';
+    if (url.indexOf('?') > -1) {
+        params = url.split('?', 2)[1];
+    } else {
+        params = url
+    }
     const param_splited = params.split('&');
     for (let i = 0; i < param_splited.length; i++) {
         const param = param_splited[i];
@@ -15,7 +20,7 @@ function  getQueryVariable(url, name) {
 if ($request && $request.url.indexOf('/frontend/newbie/task/list') > -1) {
     $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
     $.log(`获取账号信息🎉: 成功\nloginId: ${getQueryVariable($request.url, 'loginId')}`);
-    $.log(`获取账号信息🎉: 成功\ncookies: ${$request.headers.cookies}`);
+    $.log(`获取账号信息🎉: 成功\ncookies: ${$request.headers.Cookie}`);
     $.log(`获取账号信息🎉: 成功\nuser-agent: ${$request.headers['User-Agent']}`);
     $.msg($.name, "获取账号信息成功🎉");
     $.done()
@@ -24,12 +29,11 @@ if ($request && $request.url.indexOf('/frontend/newbie/task/list') > -1) {
 if ($request && $request.url.indexOf('/frontend/read/sych/duration') > -1) {
     $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
     const url = $request.url;
-    const config = `login_id=${getQueryVariable(url, 'loginId')};user_id=${getQueryVariable(url, 'userId')}`
-    $.log(`获取账号信息🎉: 成功\nloginId: ${getQueryVariable($request.url, 'loginId')}`);
-    $.log(`获取账号信息🎉: 成功\ncookies: ${$request.headers.cookies}`);
-    $.log(`获取账号信息🎉: 成功\nuser-agent: ${$request.headers['User-Agent']}`);
-    Object.keys($request.headers).forEach((key) => {
-        $.log(`key:${key}, value:${$request.headers[key]}`)
+    const config = `export HTT_AUTH='login_id=${getQueryVariable(url, 'loginId')};user_id=${getQueryVariable(url, 'userId')};sensorsdata=${getQueryVariable($request.headers.Cookie, 'sensorsdata2015jssdkcross')}'`
+    $.log(config);
+    $.log(`export HTT_UA='${$request.headers['User-Agent']}'`);
+    Object.keys($request).forEach((key) => {
+        $.log(`key:${key}, value:${$request[key]}`)
     });
     $.msg($.name, "获取账号信息成功🎉");
     $.done()

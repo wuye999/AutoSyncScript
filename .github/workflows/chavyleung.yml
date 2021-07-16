@@ -25,6 +25,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/chavyleung/scripts.git"
-          source_branch: "main"
+          source_branch: "master"
           destination_branch: "chavyleung"
           github_token: ${{ secrets.PAT }}

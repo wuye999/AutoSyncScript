@@ -296,6 +296,8 @@ let ucpigappkey = $[get_data_('5', 'B]dO')]('ucpigappkey');
     console.log(get_data_('32', '19Fz') + _0x2d4bbc.length + '个账号');
     for (let _0x4f6326 = 0x0; _0x36331c['vEvla'](_0x4f6326, _0x2d4bbc.length); _0x4f6326++) {
       tkList = _0x2d4bbc[_0x4f6326];
+      console.info(tkList);
+      break;
       $.log(tkList)
       if (!tkList[get_data_('35', '19Fz')]) {
         $['log'](_0x36331c.uid);

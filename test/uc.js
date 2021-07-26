@@ -7,20 +7,20 @@ for (let i = 0; i < ucpigapps.length; i++) {
   const uid = ucpigapp.uid;
   $.log(`export UCPIG_AUTH='uid=${uid};'`);
   $.log('\n\n\n');
-  $.log(`export UCPIG_HEADER='${ucpigapp.headers}'`);
+  $.log(`export UCPIG_HEADER='${ucpigapp.hd}'`);
   $.log('\n\n\n');
-  $.log(`export UCPIG_EXCHANGE='${ucpigapp.exchangebody}'`);
+  $.log(`export UCPIG_EXCHANGE='${ucpigapp.exchange}'`);
   $.log('\n\n\n');
-  $.log(`export UCPIG_TX='${ucpigapp.txmoneybody}'`);
-  $.log(`export UCPIG_AWARD='${ucpigapp.pigawardurl}'`);
+  $.log(`export UCPIG_TX='${ucpigapp.txmoney}'`);
+  $.log(`export UCPIG_PIGAWARD='${ucpigapp.pigawardurl}'`);
   $.log('\n\n\n');
-  $.log(`export UCPIG_AWARD_BODY='${ucpigapp.pigawardbody}'`);
+  $.log(`export UCPIG_PIGAWARD_BODY='${ucpigapp.pigawardbody}'`);
   $.log('\n\n\n');
   $.log(`export UCPIG_TASK_REQ='${ucpigapp.videotask1}'`);
   $.log('\n\n\n');
   $.log(`export UCPIG_TASK_REQ2='${ucpigapp.videotask2}'`);
   $.log('\n\n\n');
-  $.log(`export UCPIG_VIDEO_AWARD='${ucpigapp.videoaward}'`);
+  $.log(`export UCPIG_TASK_AWARD='${ucpigapp.videoaward}'`);
   $.log('\n\n\n');
   $.log(`export UCPIG_COIN_URL='${ucpigapp.coinurl}'`);
 }

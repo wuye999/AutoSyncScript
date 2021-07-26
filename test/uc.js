@@ -2,34 +2,33 @@
 const jsname='UCPIG';
 const $ = Env(jsname);
 
-if ($request && $request.url.indexOf('accessToken') > -1) {
-  const exchangebody = $.getdata('exchangebody')
-  const txmoneybody = $.getdata('txmoneybody')
-  const pigawardurl = $.getdata('pigawardurl')
-  const coinurl = $.getdata('coinurl')
-  const uid = $.getdata('uid')
-  const pigawardbody = $.getdata('pigawardbody')
-  const videotask1 = $.getdata('videotask1')
-  const videotask2 = $.getdata('videotask2')
-  const videoaward = $.getdata('videoaward')
-  const headers = $.getdata('headers')
-  $.log(`exchangebody ` + exchangebody );
-  $.log(`txmoneybody ` + txmoneybody );
-  $.log(`pigawardurl ` + pigawardurl );
-  $.log(`coinurl ` + coinurl );
-  $.log(`uid ` + uid );
-  $.log(`pigawardbody ` + pigawardbody );
-  $.log(`videotask1 ` + videotask1 );
-  $.log(`videotask2 ` + videotask2 );
-  $.log(`videoaward ` + videoaward );
-  $.log(`headers ` + JSON.stringify(headers) );
-  $.log(`获取账号信息🎉: 成功`);
+const exchangebody = $.getdata('exchangebody')
+const txmoneybody = $.getdata('txmoneybody')
+const pigawardurl = $.getdata('pigawardurl')
+const coinurl = $.getdata('coinurl')
+const uid = $.getdata('uid')
+const pigawardbody = $.getdata('pigawardbody')
+const videotask1 = $.getdata('videotask1')
+const videotask2 = $.getdata('videotask2')
+const videoaward = $.getdata('videoaward')
+const headers = $.getdata('headers')
+$.log(`exchangebody ` + exchangebody );
+$.log(`txmoneybody ` + txmoneybody );
+$.log(`pigawardurl ` + pigawardurl );
+$.log(`coinurl ` + coinurl );
+$.log(`uid ` + uid );
+$.log(`pigawardbody ` + pigawardbody );
+$.log(`videotask1 ` + videotask1 );
+$.log(`videotask2 ` + videotask2 );
+$.log(`videoaward ` + videoaward );
+$.log(`headers ` + JSON.stringify(headers) );
+$.log(`获取账号信息🎉: 成功`);
 
 
-  $.log(`获取账号信息🎉: 成功`);
-  $.msg($.name, "获取账号信息成功🎉");
-  $.done()
-}
+$.log(`获取账号信息🎉: 成功`);
+$.msg($.name, "获取账号信息成功🎉");
+$.done()
+
 
 $.done();
 

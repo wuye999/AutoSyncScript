@@ -1,32 +1,33 @@
 
 const jsname='UCPIG';
 const $ = Env(jsname);
+let ucpigapps = $['getjson']('ucpigapp', []);
+for (let i = 0; i < ucpigapp.length; i++) {
+  // const ucpigapp = ucpigapps[i];
+  // const exchangebody = $.getdata('exchangebody')
+  // const txmoneybody = $.getdata('txmoneybody')
+  // const pigawardurl = $.getdata('pigawardurl')
+  // const coinurl = $.getdata('coinurl')
+  // const uid = $.getdata('uid')
+  // const pigawardbody = $.getdata('pigawardbody')
+  // const videotask1 = $.getdata('videotask1')
+  // const videotask2 = $.getdata('videotask2')
+  // const videoaward = $.getdata('videoaward')
+  // const headers = $.getdata('headers')
+  $.log(`exchangebody ` + ucpigapp.exchangebody );
+  $.log(`txmoneybody ` + ucpigapp.txmoneybody );
+  $.log(`pigawardurl ` + ucpigapp.pigawardurl );
+  $.log(`coinurl ` + ucpigapp.coinurl );
+  $.log(`uid ` + ucpigapp.uid );
+  $.log(`pigawardbody ` + ucpigapp.pigawardbody );
+  $.log(`videotask1 ` + ucpigapp.videotask1 );
+  $.log(`videotask2 ` + ucpigapp.videotask2 );
+  $.log(`videoaward ` + ucpigapp.videoaward );
+  $.log(`headers ` + JSON.stringify(ucpigapp.headers) );
 
-const exchangebody = $.getdata('exchangebody')
-const txmoneybody = $.getdata('txmoneybody')
-const pigawardurl = $.getdata('pigawardurl')
-const coinurl = $.getdata('coinurl')
-const uid = $.getdata('uid')
-const pigawardbody = $.getdata('pigawardbody')
-const videotask1 = $.getdata('videotask1')
-const videotask2 = $.getdata('videotask2')
-const videoaward = $.getdata('videoaward')
-const headers = $.getdata('headers')
-$.log(`exchangebody ` + exchangebody );
-$.log(`txmoneybody ` + txmoneybody );
-$.log(`pigawardurl ` + pigawardurl );
-$.log(`coinurl ` + coinurl );
-$.log(`uid ` + uid );
-$.log(`pigawardbody ` + pigawardbody );
-$.log(`videotask1 ` + videotask1 );
-$.log(`videotask2 ` + videotask2 );
-$.log(`videoaward ` + videoaward );
-$.log(`headers ` + JSON.stringify(headers) );
-$.log(`获取账号信息🎉: 成功`);
+}
 
 
-$.log(`获取账号信息🎉: 成功`);
-$.msg($.name, "获取账号信息成功🎉");
 $.done()
 
 

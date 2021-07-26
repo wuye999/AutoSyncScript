@@ -2,7 +2,7 @@
 const jsname='UCPIG';
 const $ = Env(jsname);
 let ucpigapps = $['getjson']('ucpigapp', []);
-for (let i = 0; i < ucpigapp.length; i++) {
+for (let i = 0; i < ucpigapps.length; i++) {
   // const ucpigapp = ucpigapps[i];
   // const exchangebody = $.getdata('exchangebody')
   // const txmoneybody = $.getdata('txmoneybody')

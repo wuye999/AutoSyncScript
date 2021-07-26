@@ -4,27 +4,25 @@ const $ = Env(jsname);
 let ucpigapps = $['getjson']('ucpigapp', []);
 for (let i = 0; i < ucpigapps.length; i++) {
   const ucpigapp = ucpigapps[i];
-  // const exchangebody = $.getdata('exchangebody')
-  // const txmoneybody = $.getdata('txmoneybody')
-  // const pigawardurl = $.getdata('pigawardurl')
-  // const coinurl = $.getdata('coinurl')
-  // const uid = $.getdata('uid')
-  // const pigawardbody = $.getdata('pigawardbody')
-  // const videotask1 = $.getdata('videotask1')
-  // const videotask2 = $.getdata('videotask2')
-  // const videoaward = $.getdata('videoaward')
-  // const headers = $.getdata('headers')
-  $.log(`exchangebody ` + ucpigapp.exchangebody );
-  $.log(`txmoneybody ` + ucpigapp.txmoneybody );
-  $.log(`pigawardurl ` + ucpigapp.pigawardurl );
-  $.log(`coinurl ` + ucpigapp.coinurl );
-  $.log(`uid ` + ucpigapp.uid );
-  $.log(`pigawardbody ` + ucpigapp.pigawardbody );
-  $.log(`videotask1 ` + ucpigapp.videotask1 );
-  $.log(`videotask2 ` + ucpigapp.videotask2 );
-  $.log(`videoaward ` + ucpigapp.videoaward );
-  $.log(`headers ` + JSON.stringify(ucpigapp.headers) );
-
+  const uid = ucpigapp.uid;
+  $.log(`export UCPIG_AUTH='uid=${uid};'`);
+  $.log('\n\n\n');
+  $.log(`export UCPIG_HEADER='${ucpigapp.headers}'`);
+  $.log('\n\n\n');
+  $.log(`export UCPIG_EXCHANGE='${ucpigapp.exchangebody}'`);
+  $.log('\n\n\n');
+  $.log(`export UCPIG_TX='${ucpigapp.txmoneybody}'`);
+  $.log(`export UCPIG_AWARD='${ucpigapp.pigawardurl}'`);
+  $.log('\n\n\n');
+  $.log(`export UCPIG_AWARD_BODY='${ucpigapp.pigawardbody}'`);
+  $.log('\n\n\n');
+  $.log(`export UCPIG_TASK_REQ='${ucpigapp.videotask1}'`);
+  $.log('\n\n\n');
+  $.log(`export UCPIG_TASK_REQ2='${ucpigapp.videotask2}'`);
+  $.log('\n\n\n');
+  $.log(`export UCPIG_VIDEO_AWARD='${ucpigapp.videoaward}'`);
+  $.log('\n\n\n');
+  $.log(`export UCPIG_COIN_URL='${ucpigapp.coinurl}'`);
 }
 
 

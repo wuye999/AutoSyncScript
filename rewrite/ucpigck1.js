@@ -29,7 +29,7 @@ async function GetCookie() {
       $.log(`获取成功🎉: userkey: ${userkey}`)
       $.log(`获取成功🎉: userid: ${userId}`)
       $.log(`获取成功🎉: task_url: ${task_url}`)
-      $.msg($.name, '', `UC小猪猪[账号${no+1}]获取任务列表成功！🎉`);
+      $.msg($.name, '', `UC小猪猪[账号${calarrno(len,userId)+1}]获取任务列表成功！🎉`);
     } else {
       $.msg($.name, '', 'UC小猪猪获取任务列表失败⚠️');
     }
@@ -48,7 +48,7 @@ async function GetCookie() {
       $.log(`获取成功🎉: userkey: ${userkey}`)
       $.log(`获取成功🎉: userid: ${userId}`)
       $.log(`获取成功🎉: query_url: ${query_url}`)
-      $.msg($.name, '', `UC小猪猪[账号${no+1}]获取任务查询接口成功！🎉`);
+      $.msg($.name, '', `UC小猪猪[账号${calarrno(len,userId)+1}]获取任务查询接口成功！🎉`);
     } else {
       $.msg($.name, '', 'UC小猪猪获取任务查询接口失败⚠️');
     }

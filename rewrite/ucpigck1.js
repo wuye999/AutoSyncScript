@@ -22,30 +22,9 @@ async function GetCookie() {
     const task_url = $request.url;
     const userkey = JSON.stringify($request.headers);
     const userId = $request.url.split("sn=")[1].split("&")[0];
+    let len = ucpigapp.length;
     if (userId) {
-      let status = 1;
-      let no = ucpigapp.length;
-      for (let i = 0, len = no; i < len; i++) {
-        let ac = ucpigapp[i] || {};
-        if (ac.uid) {
-          if (ac.uid == userId) {
-            no = i;
-            status = 0;
-            ucpigapp[no].task_url = task_url;
-            break;
-          }
-        } else if (no == len) {
-          no = i;
-        }
-      }
-      let ucpigappck = ucpigapp[no];
-      if (!ucpigappck) {
-        ucpigapp[no] = {
-          uid: userId,
-          task_url,
-        };
-      }
-
+      ucpigapp[calarrno(len, userId)].task_url = task_url;
       $.setdata(JSON.stringify(ucpigapp, null, 2), 'ucpigapp');
       $.log(`获取成功🎉: userkey: ${userkey}`)
       $.log(`获取成功🎉: userid: ${userId}`)
@@ -62,30 +41,9 @@ async function GetCookie() {
     const query_url = $request.url;
     const userkey = JSON.stringify($request.headers);
     const userId = $request.url.split("sn=")[1].split("&")[0];
+    let len = ucpigapp.length;
     if (userId) {
-      let status = 1;
-      let no = ucpigapp.length;
-      for (let i = 0, len = no; i < len; i++) {
-        let ac = ucpigapp[i] || {};
-        if (ac.uid) {
-          if (ac.uid == userId) {
-            no = i;
-            status = 0;
-            ucpigapp[no].query_url = query_url;
-            break;
-          }
-        } else if (no == len) {
-          no = i;
-        }
-      }
-      let ucpigappck = ucpigapp[no];
-      if (!ucpigappck) {
-        ucpigapp[no] = {
-          uid: userId,
-          query_url,
-        };
-      }
-
+      ucpigapp[calarrno(len, userId)].query_url = query_url;
       $.setdata(JSON.stringify(ucpigapp, null, 2), 'ucpigapp');
       $.log(`获取成功🎉: userkey: ${userkey}`)
       $.log(`获取成功🎉: userid: ${userId}`)

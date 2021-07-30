@@ -20,6 +20,7 @@ async function GetCookie() {
   if ($request.url.match(/getTaskList/) && $request.url.indexOf("getTaskList") >= 0) {
     // const userbody = $request.body;
     const task_url = $request.url;
+    const userkey = JSON.stringify($request.headers);
     const userId = $request.url.split("sn=")[1].split("&")[0];
     if (userId) {
       let status = 1;
@@ -59,6 +60,7 @@ async function GetCookie() {
   if ($request.url.match(/query/) && $request.url.indexOf("/query") >= 0) {
     // const userbody = $request.body;
     const query_url = $request.query_url;
+    const userkey = JSON.stringify($request.headers);
     const userId = $request.url.split("sn=")[1].split("&")[0];
     if (userId) {
       let status = 1;

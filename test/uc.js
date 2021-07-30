@@ -3,11 +3,14 @@ const jsname='UCPIG';
 const $ = Env(jsname);
 let ucpigapps = $['getjson']('ucpigapp', []);
 for (let i = 0; i < ucpigapps.length; i++) {
+  $.log(`------------------账号${i + 1}--------------`)
   const ucpigapp = ucpigapps[i];
   const uid = ucpigapp.uid;
   $.log(`export UCPIG_AUTH='uid=${uid};'`);
   $.log('\n\n\n');
   $.log(`export UCPIG_HEADER='${ucpigapp.hd}'`);
+  $.log('\n\n\n');
+  $.log(`export UCPIG_TASK='${ucpigapp.task_url}&${ucpigapp.query_url}'`);
   $.log('\n\n\n');
   $.log(`export UCPIG_EXCHANGE_BODY='uid=${uid}&${ucpigapp.exchange}'`);
   $.log('\n\n\n');
@@ -24,6 +27,9 @@ for (let i = 0; i < ucpigapps.length; i++) {
   $.log(`export UCPIG_TASK_AWARD='${ucpigapp.videoaward}'`);
   $.log('\n\n\n');
   $.log(`export UCPIG_COIN_URL='${ucpigapp.coinurl}'`);
+  $.log('\n');
+  $.log(`------------------账号${i + 1}--------------`);
+  $.log('\n\n\n');
 }
 
 

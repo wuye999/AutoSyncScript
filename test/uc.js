@@ -9,12 +9,13 @@ for (let i = 0; i < ucpigapps.length; i++) {
   $.log('\n\n\n');
   $.log(`export UCPIG_HEADER='${ucpigapp.hd}'`);
   $.log('\n\n\n');
-  $.log(`export UCPIG_EXCHANGE='${ucpigapp.exchange}'`);
+  $.log(`export UCPIG_EXCHANGE_BODY='uid=${uid}&${ucpigapp.exchange}'`);
   $.log('\n\n\n');
-  $.log(`export UCPIG_TX='${ucpigapp.txmoney}'`);
-  $.log(`export UCPIG_PIGAWARD='${ucpigapp.pigawardurl}'`);
+  $.log(`export UCPIG_TX_BODY='uid=${uid}&${ucpigapp.txmoney}'`);
   $.log('\n\n\n');
-  $.log(`export UCPIG_PIGAWARD_BODY='${ucpigapp.pigawardbody}'`);
+  $.log(`export UCPIG_PIG_AWARD_URL='${ucpigapp.pigawardurl}'`);
+  $.log('\n\n\n');
+  $.log(`export UCPIG_PIGAWARD_BODY='uid=${uid}&${ucpigapp.pigawardbody}'`);
   $.log('\n\n\n');
   $.log(`export UCPIG_TASK_REQ='${ucpigapp.videotask1}'`);
   $.log('\n\n\n');

@@ -59,7 +59,7 @@ async function GetCookie() {
 
   if ($request.url.match(/query/) && $request.url.indexOf("/query") >= 0) {
     // const userbody = $request.body;
-    const query_url = $request.query_url;
+    const query_url = $request.url;
     const userkey = JSON.stringify($request.headers);
     const userId = $request.url.split("sn=")[1].split("&")[0];
     if (userId) {

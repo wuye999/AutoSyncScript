@@ -1,4 +1,79 @@
 proxies:
+## clash订阅地址
+  - {name: "clash订阅地址:https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https://raw.githubusercontent.com/wuye999/AutoSyncScript/main/proxy.txt&insert=false", server: 1, port: 10086, type: ss, cipher: aes-256-cfb, password: !<str> 1}
+
+## 加速器
+  - {name: 🇳🇱 荷兰c50s5-2, server: c50s5.jamjams.net, port: 26917, type: vmess, uuid: 3bc30c04-4854-47bc-80b5-4fbb2364006e, alterId: 8, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡, server: 172.105.114.4, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国山羊, server: 45.144.243.186, port: 16823, type: vmess, uuid: 7455b760-fc67-4898-ae69-afce6eb2a9c0, alterId: 0, cipher: auto, tls: false}
+  - {name: 日本1, server: 185.168.20.54, port: 16823, type: vmess, uuid: 7455b760-fc67-4898-ae69-afce6eb2a9c0, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本c50s4-3, server: c50s4.jamjams.net, port: 26917, type: vmess, uuid: 3bc30c04-4854-47bc-80b5-4fbb2364006e, alterId: 8, cipher: auto, tls: false}
+  - {name: 🇰🇷 韩国cn2 b2, server: 117.28.243.220, port: 8076, type: ss, cipher: rc4-md5, password: passinfo123}
+  - {name: 🇮🇳 印度CN2 A1, server: 117.28.243.220, port: 8147, type: ss, cipher: rc4-md5, password: passinfo123}
+  - {name: 🇩🇪 德国CN2 A1, server: 117.28.243.220, port: 8223, type: ss, cipher: rc4-md5, password: passinfo123}
+  - {name: 🇨🇦 加拿大CN2 A1, server: 117.28.243.220, port: 8221, type: ss, cipher: rc4-md5, password: passinfo123}
+  - {name: 🇷🇺 俄罗斯CN2 A1, server: 117.28.243.220, port: 8045, type: ss, cipher: rc4-md5, password: passinfo123}
+
+## mgnb
+  - {name: "🇭🇰 [0.5x]香港 - 联通手厅免流", server: 23.101.1.64, port: 80, type: vmess, uuid: 3844568c-aaba-4c79-af97-159da83eb2a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: "🇭🇰 [0.5x] 香港 - HGC", server: az.mg-nb.com, port: 30002, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: hm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇭🇰 [0.5x] 香港 - 直连", server: az.mg-nb.com, port: 33333, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: az.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇯🇵 [0.5x] 日本 - 直连", server: az.mg-nb.com, port: 30000, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: jm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇺🇸 [0.5x] 美国 - 直连", server: az.mg-nb.com, port: 30001, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: um.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇨🇳 [0.5x] 台湾 - 直连", server: az.mg-nb.com, port: 30003, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: him.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇸🇬 [0.5x] 新加坡 - 直连", server: az.mg-nb.com, port: 30004, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: sm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇭🇰 [1x] 香港 - 江门入口", server: jm.mg-nb.com, port: 45523, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: hm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇯🇵 [1x] 日本 - 江门入口", server: jm.mg-nb.com, port: 45517, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: jm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇺🇸 [1x] 美国 - 江门入口", server: jm.mg-nb.com, port: 45519, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: um.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇨🇳 [1x] 台湾 - 江门入口", server: jm.mg-nb.com, port: 45535, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: him.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇸🇬 [1x] 新加坡 - 江门入口", server: jm.mg-nb.com, port: 45537, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: sm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇭🇰 [1x] 香港 - 广州入口", server: gz.mg-nb.com, port: 45588, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: hm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇯🇵 [1x] 日本 - 广州入口", server: gz.mg-nb.com, port: 45586, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: jm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇺🇸 [1x] 美国 - 广州入口", server: gz.mg-nb.com, port: 45587, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: um.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇨🇳 [1x] 台湾 - 广州入口", server: gz.mg-nb.com, port: 45589, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: him.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇸🇬 [1x] 新加坡 - 广州入口", server: gz.mg-nb.com, port: 45590, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: sm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇭🇰 [1.5x] 香港 - 广州入口", server: xdgz.mg-nb.com, port: 32002, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: hm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇯🇵 [1.5x] 日本 - 广州入口", server: xdgz.mg-nb.com, port: 32000, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: jm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇺🇸 [1.5x] 美国 - 广州入口", server: xdgz.mg-nb.com, port: 32001, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: um.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇨🇳 [1.5x] 台湾 - 广州入口", server: xdgz.mg-nb.com, port: 32003, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: him.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇸🇬 [1.5x] 新加坡 - 广州入口", server: xdgz.mg-nb.com, port: 32004, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: sm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇭🇰 [1.5x] 香港 - 佛山入口", server: xdfs.mg-nb.com, port: 32002, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: hm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇯🇵 [1.5x] 日本 - 佛山入口", server: xdfs.mg-nb.com, port: 32000, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: jm.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇺🇸 [1.5x] 美国 - 佛山入口", server: xdfs.mg-nb.com, port: 32001, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: um.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇨🇳 [1.5x] 台湾 - 佛山入口", server: xdfs.mg-nb.com, port: 32003, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: him.sjebo.com.cn, skip-cert-verify: false}
+  - {name: "🇸🇬 [1.5x] 新加坡 - 佛山入口", server: xdfs.mg-nb.com, port: 32004, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: sm.sjebo.com.cn, skip-cert-verify: false}
+
+## 优质
+  - {name: 🇫🇷 香港-2 FREE, server: superstar.hk.02.free.srayx.xyz, port: 23002, type: ss, cipher: chacha20-ietf-poly1305, password: 110f4483-7c2d-471a-a58c-50f97b9c7dc6}
+  - {name: p5.22332e.com:8333, server: p5.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
+  - {name: 466, server: 139.155.22.227, port: 49110, type: vmess, uuid: f7675b7e-59bf-435c-ac03-dc2482f27e5d, alterId: 64, cipher: auto, tls: false}
+  - {name: "🇯🇵 SS JP - AWS WL NTT #2", server: wl2.misaka.rest, port: 11451, type: ss, cipher: aes-256-gcm, password: 7ca01325-861f-485f-9214-92faef992243}
+  - {name: 🇰🇷 韩国2|@mftizi, server: kr2.uuv2.co.uk, port: 3389, type: vmess, uuid: bd420812-8dcd-4f5e-8716-ecfadcf0fbbb, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /TG@mftizi, ws-headers: {Host: kr2.uuv2.co.uk}}
+  - {name: 🇸🇬 新加坡2|@mftizi, server: sg02.uuv2.uk, port: 2083, type: vmess, uuid: 96985a0e-24f6-487e-9ab4-89716fa5f72a, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /@mftizi, ws-headers: {Host: sg02.uuv2.uk}}
+  - {name: 🇸🇬 SG_1727, server: 89.187.163.130, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇦🇺 AU_78, server: 45.125.247.107, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇦🇺 AU_76, server: 45.125.247.45, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: IT_1189, server: 84.17.58.205, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: IT_1143, server: 84.17.58.136, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: IT_1172, server: 84.17.58.205, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: ZZ_2440, server: 103.152.151.86, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇺🇸 US_2068, server: 199.10.64.133, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇫🇷 FR_841, server: 51.77.170.89, port: 3030, type: ss, cipher: chacha20-ietf-poly1305, password: 7FDvhjev93bs}
+  - {name: HR_1002, server: 85.10.50.164, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇨🇳 TW_1806, server: 2.58.242.45, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: HR_1012, server: 85.10.50.164, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: ID_1038, server: 103.120.66.214, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇷🇴 RO_1608, server: 193.29.106.61, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇨🇳 TW_1795, server: 2.58.242.46, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: 🇺🇸 US_2135, server: 212.102.40.68, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: GB_941, server: 86.106.136.85, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇷🇺 RU_1688, server: 5.189.202.16, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
+  - {name: 🇷🇴 RO_1622, server: 193.29.106.5, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇨🇳 TW_1781, server: 2.58.241.27, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+
+
+## 超级线路G3
+proxies:
   - {name: 超级线路G3, server: twn600wd4.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: bb01c71b1c9d, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twn600wd4.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
   - {name: 超级线路G2, server: twn600wd3.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: be770418575f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twn600wd3.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
   - {name: 超级线路G1, server: alihsknew2.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: 08e1a848a855, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: alihsknew2.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
@@ -24,3 +99,296 @@ proxies:
   - {name: 优质线路M1, server: dx1000usnew001.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: fcc1e096fe7f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx1000usnew001.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
   - {name: 优质线路M2, server: dx1000us1.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: 164d8ab7811a, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx1000us1.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
   - {name: 新用户试用, server: dx600twnewss002.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: 3c7ab2c61374, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twnewss002.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+
+## 80口免流
+  - {name: 🇭🇰 HK_TG 80免流1, server: 18.166.178.36, port: 80, type: vmess, uuid: 07a20eee-d49e-4dab-a077-bb50fee46421, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.166.178.36}}
+  - {name: 🇭🇰 HK_TG 80免流2, server: blog.chaoge.cool, port: 29543, type: vmess, uuid: 8d9184d2-ec19-47d3-81a1-a3f43cf40bd9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 🇭🇰 HK_TG 80免流3, server: 18.167.94.242, port: 80, type: vmess, uuid: cec85927-8a7a-4866-df8c-27ed589de0ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 🇭🇰 HK_TG 80免流4, server: 103.85.20.81, port: 12345, type: vmess, uuid: 8c37630e-83f6-3dc1-85be-bb6974626719, alterId: 2, cipher: auto, tls: false}
+  - {name: 🇭🇰 HK_TG , server: 3.36.48.102, port: 80, type: vmess, uuid: 6f70af6b-18d3-47f0-b49b-f61e4fa89691, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /分享Q群:262349039, ws-headers: {Host: 3.36.48.102}}
+
+## 别人的白嫖神器
+  - {name: 「🇭🇰」东皇钟「直连」★, server: qs3.shenseven.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a}
+  - {name: 「🇯🇵」无量尺「直连」★★, server: qs4.shenseven.xyz, port: 8443, type: ss, cipher: chacha20-ietf-poly1305, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a}
+  - {name: 「🇰🇷」聚宝盆「中转」★, server: qs8.shenseven.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a}
+  - {name: 「🇸🇬」神之魂「解锁」★★, server: qs11.shenseven.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a}
+  - {name: 「🇸🇬」女娲石「免流」★, server: qt2.shenseven.xyz, port: 80, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: qt2.shenseven.xyz, skip-cert-verify: true}
+  - {name: 「🇯🇵」霸王弓「中转」★★★, server: aga.shenseven.xyz, port: 10015, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: aga.shenseven.xyz, skip-cert-verify: true}
+  - {name: 「🇭🇰」神农鼎「直连」★★, server: bv1.proxypools.top, port: 8443, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: bv1.proxypools.top, skip-cert-verify: true}
+  - {name: 「🇸🇬」崆峒印「免流」★, server: qt6.shenseven.xyz, port: 80, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: qt6.shenseven.xyz, skip-cert-verify: true}
+  - {name: 「🇭🇰」炼妖壶「直连」★, server: qt7.shenseven.xyz, port: 443, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: qt7.shenseven.xyz, skip-cert-verify: true}
+  - {name: 「🇸🇬」复活甲「直连」★, server: qt10.shenseven.xyz, port: 443, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: qt10.shenseven.xyz, skip-cert-verify: true}
+  - {name: 「🇮🇹」金刚镯「中转」★★★, server: qt11.shenseven.xyz, port: 8443, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: qt11.shenseven.xyz, skip-cert-verify: true}
+  - {name: 「🇸🇬」观音泪「中转」★, server: qt12.shenseven.xyz, port: 443, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: qt12.shenseven.xyz, skip-cert-verify: true}
+  - {name: 「🇭🇰」三叉戟「中转」★, server: aga.shenseven.xyz, port: 10016, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: aga.shenseven.xyz, skip-cert-verify: true}
+  - {name: 「🇺🇸」圣之杯「中转」★★, server: qt14.shenseven.xyz, port: 443, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: qt14.shenseven.xyz, skip-cert-verify: true}
+  - {name: 「🇰🇷」金箍棒「中转」★★, server: aga.shenseven.xyz, port: 10017, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: aga.shenseven.xyz, skip-cert-verify: true}
+  - {name: 「🇨🇦」红绣球「解锁」★★, server: zf.proxypools.top, port: 45009, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: zf.proxypools.top, skip-cert-verify: true}
+  - {name: 「🇭🇰」神之手「中转」★★, server: qt19.shenseven.xyz, port: 443, type: trojan, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, sni: qt19.shenseven.xyz, skip-cert-verify: true}
+  - {name: 「🇧🇷」开天斧「中转」★★, server: qv2.shenseven.xyz, port: 8443, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /tg2shenseven, ws-headers: {Host: qv2.shenseven.xyz}}
+  - {name: 「🇭🇰」伏羲琴「中转」★★★, server: qv5.shenseven.xyz, port: 443, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /shenseven, ws-headers: {Host: qv5.shenseven.xyz}}
+  - {name: 「🇯🇵」昆仑镜「免流」★, server: qv6.shenseven.xyz, port: 80, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull-hls.free.video.10010.com}}
+  - {name: 「🇰🇷」轩辕剑「直连」★, server: qv7.shenseven.xyz, port: 443, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /shensevenyyds, ws-headers: {Host: qv7.shenseven.xyz}}
+  - {name: 「🇭🇰」昊天塔「免流」★★, server: qv8.shenseven.xyz, port: 80, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}}
+  - {name: 「🇸🇬」免流牌「免流」★, server: qv9.shenseven.xyz, port: 80, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 「🇭🇰」七龙珠「免流」★★, server: qv10.shenseven.xyz, port: 80, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull-flv-l6.douyincdn.com}}
+  - {name: 「🇬🇧」昊天锤「中转」★★, server: qv11.shenseven.xyz, port: 8443, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 「🇭🇰」超神器「免流」★, server: qv12.shenseven.xyz, port: 80, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: gd.189.cn}}
+  - {name: 「🇺🇸」修罗剑「中转」★, server: qv13.shenseven.xyz, port: 443, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 「🇭🇰」约之柜「中转」★, server: aga.shenseven.xyz, port: 10018, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 「🇰🇷」九齿耙「中转」★, server: qv15.shenseven.xyz, port: 8443, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /shensevens, ws-headers: {Host: qv15.shenseven.xyz}}
+  - {name: 「🇭🇰」星辰珠「解锁」★★, server: aga.shenseven.xyz, port: 10019, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}}
+
+## 台湾爆炸之surfshark
+  - {name: 🇨🇳 台湾, server: 2.58.242.54, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇨🇳 台湾 2, server: 2.58.241.131, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇨🇳 台湾 3, server: 2.58.241.131, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇨🇳 台湾 4, server: 2.58.241.131, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇨🇳 台湾 5, server: 2.58.241.131, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: 🇨🇳 台湾 6, server: 2.58.241.131, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇨🇳 台湾 7, server: 2.58.242.54, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
+  - {name: 🇨🇳 台湾 8, server: 2.58.242.54, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: 🇨🇳 台湾 9, server: 2.58.241.131, port: 46726, type: ss, cipher: aes-256-gcm, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: 🇨🇳 台湾 10, server: 2.58.242.54, port: 44742, type: ss, cipher: aes-256-gcm, password: QCStKzZ56SHBc4tL7stCEqqd}
+  - {name: 🇨🇳 台湾 11, server: 2.58.241.131, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 🇸🇬 Singapore, server: 89.187.163.136, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇸🇬 Singapore 2, server: 89.187.163.136, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇸🇬 Singapore 3, server: 89.187.163.136, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 🇸🇬 Singapore 4, server: 89.187.163.136, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇸🇬 Singapore 5, server: 89.187.163.136, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: 🇸🇬 Singapore 6, server: 89.187.163.136, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: 🇸🇬 Singapore 7, server: 89.187.163.136, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: 🇸🇬 Singapore 8, server: 89.187.163.136, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: 🇸🇬 Singapore 9, server: 89.187.163.136, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
+  - {name: 🇭🇰 香港, server: 212.102.42.201, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇭🇰 香港 2, server: 212.102.42.201, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇭🇰 香港 3, server: 212.102.42.201, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇭🇰 香港 4, server: 212.102.42.201, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇭🇰 香港 5, server: 212.102.42.201, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 🇭🇰 香港 6, server: 212.102.42.201, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇭🇰 香港 7, server: 212.102.42.201, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 🇭🇰 香港 8, server: 212.102.42.201, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: 🇭🇰 香港 9, server: 212.102.42.201, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇭🇰 香港 10, server: 212.102.42.201, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇯🇵 JP 🇯🇵 Tokyo, server: 217.138.212.19, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 🇯🇵 JP 🇯🇵 Tokyo 2, server: 217.138.212.19, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇯🇵 JP 🇯🇵 Tokyo 3, server: 217.138.212.19, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇯🇵 JP 🇯🇵 Tokyo 4, server: 217.138.212.19, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: 🇯🇵 JP 🇯🇵 Tokyo 5, server: 217.138.212.19, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 🇯🇵 JP 🇯🇵 Tokyo 6, server: 217.138.212.19, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇯🇵 JP 🇯🇵 Tokyo 7, server: 217.138.212.19, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇯🇵 JP 🇯🇵 Tokyo 8, server: 217.138.212.19, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+
+  
+## ShuttleVPN
+  - {name: ShuttleVPN-no, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-no1, server: 46.29.218.170, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-no2, server: 46.29.218.146, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-es, server: 38.39.192.74, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-es1, server: 172.107.233.234, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-es2, server: 172.107.233.230, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-es3, server: 172.107.233.34, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-kr, server: 141.164.38.135, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-kr1, server: 158.247.200.56, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-kr2, server: 141.164.43.48, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-kr3, server: 158.247.201.207, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-kr4, server: 141.164.37.3, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-kr5, server: 158.247.214.205, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-kr6, server: 158.247.224.121, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-kr7, server: 158.247.208.213, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-kr8, server: 141.164.55.126, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-kr9, server: 158.247.199.70, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-kr10, server: 158.247.209.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-au, server: 172.105.167.214, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-au1, server: 172.105.174.182, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-au2, server: 172.105.190.20, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-au3, server: 172.105.186.247, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-au4, server: 172.105.176.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-au5, server: 172.105.162.49, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-au6, server: 172.105.172.37, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br, server: 128.14.222.213, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br1, server: 128.14.222.212, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br2, server: 128.14.222.210, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br3, server: 128.14.222.219, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br4, server: 128.14.222.215, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br5, server: 128.14.222.209, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br6, server: 128.14.222.216, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br7, server: 128.14.222.214, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br8, server: 128.14.222.211, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br9, server: 128.14.222.201, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br10, server: 128.14.222.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-br11, server: 128.14.222.220, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 ShuttleVPN-hk, server: 118.107.244.113, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 ShuttleVPN-hk1, server: 118.107.244.111, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 ShuttleVPN-hk2, server: 118.107.244.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 ShuttleVPN-hk3, server: 192.169.99.14, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 ShuttleVPN-hk4, server: 192.169.99.13, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 ShuttleVPN-hk5, server: 192.169.99.15, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 ShuttleVPN-hk6, server: 192.169.99.16, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-it, server: 185.213.21.9, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-it1, server: 158.58.172.125, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-it2, server: 185.213.21.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-it3, server: 185.213.21.5, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in, server: 45.79.127.97, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in1, server: 45.79.121.166, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in2, server: 45.79.123.78, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in3, server: 172.105.59.32, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in4, server: 45.79.126.80, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in5, server: 172.105.42.160, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in6, server: 172.104.206.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in7, server: 192.46.212.33, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in8, server: 192.46.209.120, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in9, server: 45.79.121.236, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in10, server: 172.105.57.249, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in11, server: 172.105.55.72, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in12, server: 172.104.207.231, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in13, server: 172.104.206.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in14, server: 45.79.122.28, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in15, server: 172.105.42.121, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in16, server: 192.46.211.249, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in17, server: 172.105.38.55, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in18, server: 172.105.60.202, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-in19, server: 172.105.63.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-pl, server: 194.15.196.106, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-pl1, server: 194.15.196.70, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-pl2, server: 194.15.196.78, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-pl3, server: 54.36.174.181, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-pl4, server: 51.75.60.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-pl5, server: 51.77.53.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr, server: 51.77.52.206, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr1, server: 51.68.155.113, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr2, server: 194.15.196.98, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-pl6, server: 54.38.195.160, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-pl7, server: 51.77.52.74, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-pl8, server: 194.15.196.54, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-pl9, server: 194.15.196.66, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-jp, server: 172.104.107.220, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-jp1, server: 172.105.232.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-jp2, server: 172.105.230.112, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-jp3, server: 139.162.107.183, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-jp4, server: 172.104.112.181, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-jp5, server: 192.169.108.173, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-jp6, server: 192.169.108.175, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-jp7, server: 192.169.108.171, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-jp8, server: 192.169.108.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-jp9, server: 192.169.108.170, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-jp10, server: 192.169.108.174, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg, server: 139.99.68.107, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg1, server: 192.169.112.166, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg2, server: 192.169.112.174, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg3, server: 192.169.112.167, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg4, server: 192.169.112.168, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg5, server: 192.169.112.165, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg6, server: 139.99.8.167, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg7, server: 139.99.9.51, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg8, server: 139.99.120.5, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg9, server: 139.99.123.156, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg10, server: 139.99.120.31, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg11, server: 139.99.9.97, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-sg12, server: 139.99.122.148, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-nl, server: 91.232.105.253, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-nl1, server: 62.112.10.201, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-nl2, server: 62.112.9.220, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-nl3, server: 51.15.22.22, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-nl4, server: 51.15.20.222, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr3, server: 62.210.38.178, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr4, server: 188.165.32.235, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr5, server: 62.210.140.163, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr6, server: 151.80.27.161, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr7, server: 62.210.206.236, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr8, server: 195.154.184.212, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr9, server: 62.210.177.189, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr10, server: 193.70.44.135, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-fr11, server: 5.39.70.138, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de, server: 193.108.117.24, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de1, server: 193.108.118.79, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de2, server: 193.108.117.8, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de3, server: 193.108.117.2, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de4, server: 104.166.155.78, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de5, server: 193.108.118.34, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de6, server: 104.166.155.69, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de7, server: 217.182.199.223, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de8, server: 104.166.155.70, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de9, server: 51.77.84.79, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de10, server: 145.239.1.175, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de11, server: 54.36.111.22, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-de11 2, server: 193.108.118.30, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk, server: 172.99.190.230, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk1, server: 193.118.60.166, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk2, server: 193.118.60.167, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk3, server: 193.118.60.165, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk4, server: 193.118.60.169, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk5, server: 193.118.60.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk6, server: 172.99.190.130, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk7, server: 172.99.190.57, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk8, server: 193.118.60.168, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk9, server: 172.99.190.7, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk10, server: 193.118.60.170, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk11, server: 193.118.60.171, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk12, server: 172.99.190.235, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk13, server: 172.99.190.84, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 ShuttleVPN-uk14, server: 172.99.190.35, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca, server: 134.195.196.26, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca1, server: 134.195.196.154, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca2, server: 134.195.196.41, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca3, server: 158.51.121.154, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca4, server: 134.195.198.195, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca5, server: 134.195.198.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca6, server: 198.57.27.238, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca7, server: 134.195.198.167, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca8, server: 134.195.198.211, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca9, server: 134.195.198.95, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca10, server: 134.195.198.250, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca11, server: 134.195.196.97, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca12, server: 134.195.198.106, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca13, server: 198.57.27.16, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca14, server: 198.57.27.225, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca15, server: 198.57.27.229, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca16, server: 134.195.196.79, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca17, server: 134.195.198.252, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca18, server: 134.195.196.163, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca19, server: 134.195.196.118, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca20, server: 198.57.27.200, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: ShuttleVPN-ca21, server: 198.57.27.247, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us, server: 38.107.226.146, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us1, server: 38.107.226.49, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us2, server: 38.75.136.161, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us3, server: 38.91.101.159, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us4, server: "\"38.143.66.55", port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us5, server: 38.91.100.150, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us6, server: 38.68.134.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us7, server: 167.88.62.104, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us8, server: 167.88.61.5, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us9, server: 38.91.100.102, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us10, server: 167.88.61.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us11, server: 38.114.114.67, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us12, server: 38.143.66.87, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us13, server: 167.88.61.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us14, server: 142.202.48.14, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us15, server: 167.88.63.108, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us16, server: 167.88.63.117, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us17, server: 167.88.63.64, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us18, server: 167.88.63.5, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us19, server: 167.88.63.93, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us20, server: 167.88.63.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us21, server: 167.88.63.17, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us22, server: 167.88.63.82, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us23, server: 169.197.141.92, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us24, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us25, server: 169.197.141.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us26, server: 38.91.100.130, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us27, server: 38.91.101.210, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us28, server: 38.91.101.27, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us29, server: 38.91.100.134, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us30, server: 167.88.61.175, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us31, server: 38.91.102.30, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us32, server: 167.88.61.96, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us33, server: 167.88.63.59, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us34, server: 142.202.48.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us35, server: 142.202.48.17, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us36, server: 142.202.48.45, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us37, server: 142.202.48.58, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us38, server: 167.88.63.33, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us39, server: 167.88.63.107, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us40, server: 169.197.141.142, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 ShuttleVPN-us41, server: 169.197.141.244, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}

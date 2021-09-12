@@ -1,8 +1,7 @@
 proxies:
-## clash订阅地址
+  ## clash订阅地址
   - {name: "clash订阅地址:https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https://raw.githubusercontent.com/wuye999/AutoSyncScript/main/proxy.txt&insert=false", server: 1, port: 10086, type: ss, cipher: aes-256-cfb, password: !<str> 1}
-
-## 加速器
+  ## 加速器
   - {name: 🇳🇱 荷兰c50s5-2, server: c50s5.jamjams.net, port: 26917, type: vmess, uuid: 3bc30c04-4854-47bc-80b5-4fbb2364006e, alterId: 8, cipher: auto, tls: false}
   - {name: 🇸🇬 新加坡, server: 172.105.114.4, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
   - {name: 🇺🇸 美国山羊, server: 45.144.243.186, port: 16823, type: vmess, uuid: 7455b760-fc67-4898-ae69-afce6eb2a9c0, alterId: 0, cipher: auto, tls: false}
@@ -13,8 +12,7 @@ proxies:
   - {name: 🇩🇪 德国CN2 A1, server: 117.28.243.220, port: 8223, type: ss, cipher: rc4-md5, password: passinfo123}
   - {name: 🇨🇦 加拿大CN2 A1, server: 117.28.243.220, port: 8221, type: ss, cipher: rc4-md5, password: passinfo123}
   - {name: 🇷🇺 俄罗斯CN2 A1, server: 117.28.243.220, port: 8045, type: ss, cipher: rc4-md5, password: passinfo123}
-
-## mgnb
+  ## mgnb
   - {name: "🇭🇰 [0.5x]香港 - 联通手厅免流", server: 23.101.1.64, port: 80, type: vmess, uuid: 3844568c-aaba-4c79-af97-159da83eb2a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
   - {name: "🇭🇰 [0.5x] 香港 - HGC", server: az.mg-nb.com, port: 30002, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: hm.sjebo.com.cn, skip-cert-verify: false}
   - {name: "🇭🇰 [0.5x] 香港 - 直连", server: az.mg-nb.com, port: 33333, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: az.sjebo.com.cn, skip-cert-verify: false}
@@ -42,8 +40,7 @@ proxies:
   - {name: "🇺🇸 [1.5x] 美国 - 佛山入口", server: xdfs.mg-nb.com, port: 32001, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: um.sjebo.com.cn, skip-cert-verify: false}
   - {name: "🇨🇳 [1.5x] 台湾 - 佛山入口", server: xdfs.mg-nb.com, port: 32003, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: him.sjebo.com.cn, skip-cert-verify: false}
   - {name: "🇸🇬 [1.5x] 新加坡 - 佛山入口", server: xdfs.mg-nb.com, port: 32004, type: trojan, password: 3844568c-aaba-4c79-af97-159da83eb2a5, sni: sm.sjebo.com.cn, skip-cert-verify: false}
-
-## 优质
+  ## 优质
   - {name: 🇫🇷 香港-2 FREE, server: superstar.hk.02.free.srayx.xyz, port: 23002, type: ss, cipher: chacha20-ietf-poly1305, password: 110f4483-7c2d-471a-a58c-50f97b9c7dc6}
   - {name: p5.22332e.com:8333, server: p5.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!}
   - {name: 466, server: 139.155.22.227, port: 49110, type: vmess, uuid: f7675b7e-59bf-435c-ac03-dc2482f27e5d, alterId: 64, cipher: auto, tls: false}
@@ -70,10 +67,7 @@ proxies:
   - {name: 🇷🇺 RU_1688, server: 5.189.202.16, port: 41738, type: ss, cipher: aes-256-gcm, password: X6yMGXnfUsuKTvEDYZSLPk4d}
   - {name: 🇷🇴 RO_1622, server: 193.29.106.5, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
   - {name: 🇨🇳 TW_1781, server: 2.58.241.27, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-
-
-## 超级线路G3
-proxies:
+  ## 超级线路G3
   - {name: 超级线路G3, server: twn600wd4.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: bb01c71b1c9d, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twn600wd4.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
   - {name: 超级线路G2, server: twn600wd3.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: be770418575f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twn600wd3.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
   - {name: 超级线路G1, server: alihsknew2.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: 08e1a848a855, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: alihsknew2.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
@@ -99,15 +93,13 @@ proxies:
   - {name: 优质线路M1, server: dx1000usnew001.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: fcc1e096fe7f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx1000usnew001.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
   - {name: 优质线路M2, server: dx1000us1.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: 164d8ab7811a, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx1000us1.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
   - {name: 新用户试用, server: dx600twnewss002.soflyso.info, port: 443, type: ss, cipher: aes-256-gcm, password: 3c7ab2c61374, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twnewss002.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
-
-## 80口免流
+  ## 80口免流
   - {name: 🇭🇰 HK_TG 80免流1, server: 18.166.178.36, port: 80, type: vmess, uuid: 07a20eee-d49e-4dab-a077-bb50fee46421, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.166.178.36}}
   - {name: 🇭🇰 HK_TG 80免流2, server: blog.chaoge.cool, port: 29543, type: vmess, uuid: 8d9184d2-ec19-47d3-81a1-a3f43cf40bd9, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
   - {name: 🇭🇰 HK_TG 80免流3, server: 18.167.94.242, port: 80, type: vmess, uuid: cec85927-8a7a-4866-df8c-27ed589de0ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: pull.free.video.10010.com}}
   - {name: 🇭🇰 HK_TG 80免流4, server: 103.85.20.81, port: 12345, type: vmess, uuid: 8c37630e-83f6-3dc1-85be-bb6974626719, alterId: 2, cipher: auto, tls: false}
   - {name: 🇭🇰 HK_TG , server: 3.36.48.102, port: 80, type: vmess, uuid: 6f70af6b-18d3-47f0-b49b-f61e4fa89691, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /分享Q群:262349039, ws-headers: {Host: 3.36.48.102}}
-
-## 别人的白嫖神器
+  ## 别人的白嫖神器
   - {name: 「🇭🇰」东皇钟「直连」★, server: qs3.shenseven.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a}
   - {name: 「🇯🇵」无量尺「直连」★★, server: qs4.shenseven.xyz, port: 8443, type: ss, cipher: chacha20-ietf-poly1305, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a}
   - {name: 「🇰🇷」聚宝盆「中转」★, server: qs8.shenseven.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a}
@@ -138,8 +130,7 @@ proxies:
   - {name: 「🇭🇰」约之柜「中转」★, server: aga.shenseven.xyz, port: 10018, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
   - {name: 「🇰🇷」九齿耙「中转」★, server: qv15.shenseven.xyz, port: 8443, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /shensevens, ws-headers: {Host: qv15.shenseven.xyz}}
   - {name: 「🇭🇰」星辰珠「解锁」★★, server: aga.shenseven.xyz, port: 10019, type: vmess, uuid: efa96563-6d58-4bac-a2a6-da0c0c8e4f7a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: a.189.cn}}
-
-## 台湾爆炸之surfshark
+  ## 台湾爆炸之surfshark
   - {name: 🇨🇳 台湾, server: 2.58.242.54, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
   - {name: 🇨🇳 台湾 2, server: 2.58.241.131, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
   - {name: 🇨🇳 台湾 3, server: 2.58.241.131, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
@@ -178,9 +169,7 @@ proxies:
   - {name: 🇯🇵 JP 🇯🇵 Tokyo 6, server: 217.138.212.19, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
   - {name: 🇯🇵 JP 🇯🇵 Tokyo 7, server: 217.138.212.19, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
   - {name: 🇯🇵 JP 🇯🇵 Tokyo 8, server: 217.138.212.19, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-
-  
-## ShuttleVPN
+  ## ShuttleVPN
   - {name: ShuttleVPN-no, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
   - {name: ShuttleVPN-no1, server: 46.29.218.170, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
   - {name: ShuttleVPN-no2, server: 46.29.218.146, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}

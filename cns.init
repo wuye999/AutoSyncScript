@@ -1,0 +1,67 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          cns
+# Required-Start:    $all
+# Required-Stop:     $all
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start cns daemon at boot time
+# Description:       Start cns daemon at boot time
+### END INIT INFO
+
+usage()
+{
+    [ "$(which systemctl)" != "" ] && us="systemctl [start|stop|status|restart] cns.service" || us="$0 [start|stop|status|restart]"
+    echo "Usage:
+    $us
+    Config file is [cns_install_dir]/cns.json"
+}
+
+status()
+{
+    {
+        grep -q cns /proc/`cat "[cns_install_dir]/run.pid" 2>/dev/null`/comm 2>/dev/null && \
+            echo "cns is running..." || \
+            echo "cns is stopped..."
+    } 2>/dev/null
+}
+
+start()
+{
+    status | grep running && return 0
+    echo -n "Starting cns:"
+    cd "[cns_install_dir]"
+    ./cns -json=cns.json -daemon=true >/dev/null
+    sleep 1
+    for server_port in [cns_tcp_port_list]; do
+        iptables -I INPUT -p 6 --dport $server_port -m comment --comment "cns server port" -j ACCEPT
+        ip6tables -I INPUT -p 6 --dport $server_port -m comment --comment "cns server port" -j ACCEPT
+    done 2>/dev/null
+    grep -q cns /proc/`cat [cns_install_dir]/run.pid`/comm && \
+        echo -e "\033[60G[\033[32m  OK  \033[0m]" || \
+        echo -e "\033[60G[\033[31mFAILED\033[0m]"
+}
+
+stop()
+{
+    for server_port in [cns_tcp_port_list]; do
+        while iptables -D INPUT -p 6 --dport $server_port -m comment --comment "cns server port" -j ACCEPT; do :;done
+        while ip6tables -D INPUT -p 6 --dport $server_port -m comment --comment "cns server port" -j ACCEPT; do :;done
+    done 2>/dev/null
+    status | grep stopped && return 0
+    echo -n "Stopping cns:"
+    kill -9 `cat [cns_install_dir]/run.pid 2>/dev/null` 2>/dev/null
+    sleep 1
+    grep -q cns /proc/`cat [cns_install_dir]/run.pid`/comm && \
+        echo -e "\033[60G[\033[31mFAILED\033[0m]" || \
+        echo -e "\033[60G[\033[32m  OK  \033[0m]"
+}
+
+restart()
+{
+    stop
+    start
+}
+
+${1:-usage} 2>/dev/null

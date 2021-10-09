@@ -1,0 +1,15 @@
+[Unit]
+Description=cns
+Documentation=https://github.com/mmmdbybyd/CNS/
+ 
+[Service]
+Type=forking
+PIDFile=[cns_install_dir]/run.pid
+ExecStart=[cns_install_dir]/cns.init start
+ExecReload=[cns_install_dir]/cns.init restart
+ExecStop=[cns_install_dir]/cns.init stop
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+

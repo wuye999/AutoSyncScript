@@ -7,7 +7,7 @@
     "apps": [{
             "id": "qczjspeed",
             "name": "汽车之家极速版",
-            "keys": ["GetUserInfoheader",  "activitybody", "addCoinbody", "addCoin2body", "GetUserInfoheader2", "activitybody2", "addCoinbody2", "addCoin2body2", "GetUserInfoheader3",  "activitybody3", "addCoinbody3", "addCoin2body3", "GetUserInfoheader4", "activitybody4", "addCoinbody4", "addCoin2body4", "GetUserInfoheader5",  "activitybody5", "addCoinbody5", "addCoin2body5", "GetUserInfoheader6",  "activitybody6", "addCoinbody6", "addCoin2body6", "GetUserInfoheader7", "activitybody7", "addCoinbody7", "addCoin2body7", "GetUserInfoheader8", "activitybody8", "addCoinbody8", "addCoin2body8", "GetUserInfoheader9",  "activitybody9", "addCoinbody9", "addCoin2body9", "GetUserInfoheader10", "activitybody10", "addCoinbody10", "addCoin2body10", "GetUserInfoheader11",  "activitybody11", "addCoinbody11", "addCoin2body11", "GetUserInfoheader12",  "activitybody12", "addCoinbody12", "addCoin2body12", "GetUserInfoheader13",  "activitybody13", "addCoinbody13", "addCoin2body13", "GetUserInfoheader14",  "activitybody14", "addCoinbody14", "addCoin2body14", "GetUserInfoheader15", "activitybody15", "addCoinbody15", "addCoin2body15", "GetUserInfoheader16",  "activitybody16", "addCoinbody16", "addCoin2body16", "GetUserInfoheader17",  "activitybody17", "addCoinbody17", "addCoin2body17", "GetUserInfoheader18", "activitybody18", "addCoinbody18", "addCoin2body18", "GetUserInfoheader19", "activitybody19", "addCoinbody19", "addCoin2body19", "GetUserInfoheader20", "activitybody20", "addCoinbody20", "addCoin2body20"],
+            "keys": ["GetUserInfoheader", "activitybody", "addCoinbody", "addCoin2body", "GetUserInfoheader2", "activitybody2", "addCoinbody2", "addCoin2body2", "GetUserInfoheader3", "activitybody3", "addCoinbody3", "addCoin2body3", "GetUserInfoheader4", "activitybody4", "addCoinbody4", "addCoin2body4", "GetUserInfoheader5", "activitybody5", "addCoinbody5", "addCoin2body5", "GetUserInfoheader6", "activitybody6", "addCoinbody6", "addCoin2body6", "GetUserInfoheader7", "activitybody7", "addCoinbody7", "addCoin2body7", "GetUserInfoheader8", "activitybody8", "addCoinbody8", "addCoin2body8", "GetUserInfoheader9", "activitybody9", "addCoinbody9", "addCoin2body9", "GetUserInfoheader10", "activitybody10", "addCoinbody10", "addCoin2body10", "GetUserInfoheader11", "activitybody11", "addCoinbody11", "addCoin2body11", "GetUserInfoheader12", "activitybody12", "addCoinbody12", "addCoin2body12", "GetUserInfoheader13", "activitybody13", "addCoinbody13", "addCoin2body13", "GetUserInfoheader14", "activitybody14", "addCoinbody14", "addCoin2body14", "GetUserInfoheader15", "activitybody15", "addCoinbody15", "addCoin2body15", "GetUserInfoheader16", "activitybody16", "addCoinbody16", "addCoin2body16", "GetUserInfoheader17", "activitybody17", "addCoinbody17", "addCoin2body17", "GetUserInfoheader18", "activitybody18", "addCoinbody18", "addCoin2body18", "GetUserInfoheader19", "activitybody19", "addCoinbody19", "addCoin2body19", "GetUserInfoheader20", "activitybody20", "addCoinbody20", "addCoin2body20"],
             "author": "@ziye",
             "settings": [{
                     "id": "qczjSuffix",
@@ -29,7 +29,7 @@
                     "val": "0",
                     "type": "number",
                     "desc": "0关闭 1开启,默认关闭"
-                }, 
+                },
                 {
                     "id": "qczjXYZ",
                     "name": "执行概率",
@@ -566,7 +566,7 @@
                     "val": "1",
                     "type": "number",
                     "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-                },{
+                }, {
                     "id": "tlsXYZ",
                     "name": "执行概率",
                     "val": "100",
@@ -590,7 +590,7 @@
                     "val": "10",
                     "type": "number",
                     "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
-                },{
+                }, {
                     "id": "tlshyidA",
                     "name": "好友A",
                     "val": "64926",
@@ -1061,7 +1061,7 @@
                     "val": "118079",
                     "type": "number",
                     "desc": "默认内置，自行修改"
-                } 
+                }
             ],
             "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/tls.js",
             "icons": ["https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/tls.png", "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/tls.png"],
@@ -1091,7 +1091,7 @@
                     "val": "0",
                     "type": "number",
                     "desc": "0关闭 1开启,默认关闭"
-                }, 
+                },
                 {
                     "id": "shzxXYZ",
                     "name": "执行概率",
@@ -1124,7 +1124,7 @@
             "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shzx.js",
             "icons": ["https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shzx.png", "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shzx.png"],
             "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shzx.js"
-        },{
+        }, {
             "id": "xm",
             "name": "小芒APP",
             "keys": ["xmurl", "xmurl2", "xmurl3", "xmurl4", "xmurl5", "xmurl6", "xmurl7", "xmurl8", "xmurl9", "xmurl10", "xmurl11", "xmurl12", "xmurl13", "xmurl14", "xmurl15", "xmurl16", "xmurl17", "xmurl18", "xmurl19", "xmurl20"],
@@ -1149,7 +1149,7 @@
                     "val": "0",
                     "type": "number",
                     "desc": "0关闭 1开启,默认关闭"
-                }, 
+                },
                 {
                     "id": "xmXYZ",
                     "name": "执行概率",
@@ -1186,7 +1186,7 @@
         {
             "id": "dsj",
             "name": "电视家APP",
-            "keys": ["dsjheader","dsjheader2","dsjheader3","dsjheader4","dsjheader5","dsjheader6","dsjheader7","dsjheader8","dsjheader9","dsjheader10","dsjheader11","dsjheader12","dsjheader13","dsjheader14","dsjheader15","dsjheader16","dsjheader17","dsjheader18", "dsjheader19","dsjheader20"],
+            "keys": ["dsjheader", "dsjtx", "dsjheader2", "dsjtx2", "dsjheader3", "dsjtx3", "dsjheader4", "dsjtx4", "dsjheader5", "dsjtx5", "dsjheader6", "dsjtx6", "dsjheader7", "dsjtx7", "dsjheader8", "dsjtx8", "dsjheader9", "dsjtx9", "dsjheader10", "dsjtx10", "dsjheader11", "dsjtx11", "dsjheader12", "dsjtx12", "dsjheader13", "dsjtx13", "dsjheader14", "dsjtx14", "dsjheader15", "dsjtx15", "dsjheader16", "dsjtx16", "dsjheader17", "dsjtx17", "dsjheader18", "dsjtx18", "dsjheader19", "dsjtx19", "dsjheader20", "dsjtx20"],
             "author": "@ziye",
             "settings": [{
                     "id": "dsjSuffix",
@@ -1208,14 +1208,21 @@
                     "val": "0",
                     "type": "number",
                     "desc": "0关闭 1开启,默认关闭"
-                }, 
+                },
+                {
+                    "id": "dsjZDTX",
+                    "name": "自动提现",
+                    "val": "0",
+                    "type": "number",
+                    "desc": "可设置0,1,5,10,20,25,30,50,99  0不提现 1随机提现 99由上到下所有提现 其他固定提现"
+                },
                 {
                     "id": "dsjXYZ",
                     "name": "执行概率",
                     "val": "100",
                     "type": "number",
                     "desc": "0不执行 可设置0-100,默认百分百"
-                }, 
+                },
                 {
                     "id": "dsjTXTX",
                     "name": "余额提醒",
@@ -1243,7 +1250,8 @@
                     "val": "10",
                     "type": "number",
                     "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
-                }],
+                }
+            ],
             "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.js",
             "icons": ["https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.png", "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.png"],
             "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.js"
@@ -1273,7 +1281,7 @@
                     "val": "0",
                     "type": "number",
                     "desc": "0关闭 1开启,默认关闭"
-                }, 
+                },
                 {
                     "id": "jddshXYZ",
                     "name": "执行概率",
@@ -1301,11 +1309,12 @@
                     "val": "10",
                     "type": "number",
                     "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
-                }],
+                }
+            ],
             "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jddsh.js",
             "icons": ["https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jddsh.png", "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jddsh.png"],
             "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/jddsh.js"
-        },{
+        }, {
             "id": "rl",
             "name": "燃旅视频",
             "keys": ["rlurl", "rlurl2", "rlurl3", "rlurl4", "rlurl5", "rlurl6", "rlurl7", "rlurl8", "rlurl9", "rlurl10", "rlurl11", "rlurl12", "rlurl13", "rlurl14", "rlurl15", "rlurl16", "rlurl17", "rlurl18", "rlurl19", "rlurl20"],
@@ -1330,7 +1339,7 @@
                     "val": "0",
                     "type": "number",
                     "desc": "0关闭 1开启,默认关闭"
-                }, 
+                },
                 {
                     "id": "rlXYZ",
                     "name": "执行概率",
@@ -1358,11 +1367,12 @@
                     "val": "10",
                     "type": "number",
                     "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
-                }],
+                }
+            ],
             "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/rl.js",
             "icons": ["https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/rl.png", "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/rl.png"],
             "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/rl.js"
-        },{
+        }, {
             "id": "znxq",
             "name": "臻浓星球",
             "keys": ["znxqheader", "znxqheader2", "znxqheader3", "znxqheader4", "znxqheader5", "znxqheader6", "znxqheader7", "znxqheader8", "znxqheader9", "znxqheader10", "znxqheader11", "znxqheader12", "znxqheader13", "znxqheader14", "znxqheader15", "znxqheader16", "znxqheader17", "znxqheader18", "znxqheader19", "znxqheader20"],
@@ -1394,7 +1404,7 @@
                     "val": "0",
                     "type": "number",
                     "desc": "0关闭 13牛奶,16电饼档,17汤蒸锅,18篮球,19杯子,20筷子,21三件套,22工具套"
-                }, 
+                },
                 {
                     "id": "znxqXYZ",
                     "name": "执行概率",
@@ -1422,11 +1432,12 @@
                     "val": "10",
                     "type": "number",
                     "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
-                }],
+                }
+            ],
             "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/znxq.js",
             "icons": ["https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/znxq.png", "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/znxq.png"],
             "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/znxq.js"
-        },{
+        }, {
             "id": "txwzq",
             "name": "微证券",
             "keys": ["txwzqck", "txzxgck", "txwzqck2", "txzxgck2", "txwzqck3", "txzxgck3", "txwzqck4", "txzxgck4", "txwzqck5", "txzxgck5", "txwzqck6", "txzxgck6", "txwzqck7", "txzxgck7", "txwzqck8", "txzxgck8", "txwzqck9", "txzxgck9", "txwzqck10", "txzxgck10", "txwzqck11", "txzxgck11", "txwzqck12", "txzxgck12", "txwzqck13", "txzxgck13", "txwzqck14", "txzxgck14", "txwzqck15", "txzxgck15", "txwzqck16", "txzxgck16", "txwzqck17", "txzxgck17", "txwzqck18", "txzxgck18", "txwzqck19", "txzxgck19", "txwzqck20", "txzxgck20"],
@@ -1458,7 +1469,7 @@
                     "val": "0",
                     "type": "number",
                     "desc": "0关闭 1开启,默认关闭"
-                }, 
+                },
                 {
                     "id": "txwzqXYZ",
                     "name": "执行概率",
@@ -1486,7 +1497,8 @@
                     "val": "10",
                     "type": "number",
                     "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
-                }],
+                }
+            ],
             "repo": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/txwzq.js",
             "icons": ["https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/txwzq.png", "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/txwzq.png"],
             "script": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/txwzq.js"
